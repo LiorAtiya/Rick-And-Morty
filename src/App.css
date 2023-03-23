@@ -93,3 +93,12 @@ body {
   justify-content: center;
   display: flex;
 }
+
+@media (max-width: 990px) {
+  .input-container {
+    width: 80%;
+  }
+  .compare-btn {
+    width: 60%;
+  }
+}
