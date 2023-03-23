@@ -1,38 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+body {
+  background-image: url("/background-rick-and-morty.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Sofia",sans-serif;
+}
+
 .App {
+  text-align: center;
+  margin: auto;
+}
+
+.App h1 {
+  color: white;
+  font-size: 70px;
+  font-family: "Sofia",sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
+}
+
+/* Card */
+.img-center {
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.text-on-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.cardlist-container h3{
+  margin-top: 1%;
+  color: white
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* SearchBox */
+
+.input-container {
+  width: 25%;
+  display: flex;
+  border-radius: 50px;
+  margin: auto;
+  background-color: white;
+}
+
+.search-input {
+  border-radius: 50px;
+  background-color: #fff;
+  padding: 1em;
+  width: 100%;
+  border: none;
+}
+
+.search-input:focus {
+  outline: none !important;
+}
+
+.search-btn {
+  color: white;
+  padding: 12px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
+
+/* Comparision */
+
+.compare-btn {
+  margin-top: 10px;
+  width: 15%;
+  padding: 10px !important;
+  border-radius: 20px !important;
+  background-color: rgb(4, 155, 4) !important;
+  font-weight: bold !important;
+  border: none !important;
+}
+
+.model-body-container {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
 }
